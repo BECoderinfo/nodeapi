@@ -35,5 +35,5 @@ const OrderSchema = new mongoose.Schema(
         },
     },{ timestamps: true });
 
-const User = new mongoose.model("User", orderSchema);
-module.exports = User;
+const Order = new mongoose.model("Order", OrderSchema);
+module.exports = Order

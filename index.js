@@ -6,7 +6,7 @@ const connectDB = require("./db/connect");
 
 const PORT = process.env.PORT || 7000;
 
-const products_routes = require("./routes/products");
+const products_routes = require("./routes/routers");
 
 app.get("/",(req,res) => {
     res.send("hi ,i am live");

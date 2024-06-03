@@ -30,10 +30,10 @@ const productSchema = new mongoose.Schema({
     },
     category: {
         type: String,
-        enum: {
-            values: ["laptop", "mobile", "tablet"],
-            message: "{VALUE} is not supported",
-        },
+        // enum: {
+        //     values: ["laptop", "mobile", "tablet"],
+        //     message: "{VALUE} is not supported",
+        // },
     },
 });
 
