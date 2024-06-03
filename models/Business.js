@@ -4,7 +4,7 @@ const validator = require("validator");
 const businessSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: [true, "Please tell us your name!"],
+        required: [true, "Please tell us your Restaurant name!"],
         unique: true,
         minlength: 3,
         maxlength: 50,

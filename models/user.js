@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 
 const userSchema = new mongoose.Schema({
-    name: {
+    FullName: {
         type: String,
         required: [true, "Please tell us your name!"],
         minlength: 3,
@@ -22,11 +22,22 @@ const userSchema = new mongoose.Schema({
         minlength: 10,
         maxlength: 10,
     },
-    address: {
+    image: {
         type: String,
-        required: [true, "Please provide your address"],
     },
-});
+    orders:[
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Order"
+        }
+    ],
+    address:[
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "address"
+        }
+    ],
+},{ timestamps: true });
 
 const User = new mongoose.model("User", userSchema);
 module.exports = User;

@@ -1,0 +1,11 @@
+User-side:
+
+register user
+login user
+update user
+create order
+add to order history
+add liked coupon
+remove liked coupon
+add to cart
+remove from cart
